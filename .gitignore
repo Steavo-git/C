@@ -1,0 +1,5 @@
+#included workspace
+C-Language.code-workspace
+
+#.exe files
+*.exe
