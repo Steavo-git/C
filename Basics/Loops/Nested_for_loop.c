@@ -3,10 +3,17 @@
 void main()
 {
     int r,c;
-    for (r=0 ;r<6;r++){
-        for (c =0 ; c<6;c++){
-            printf("%d%d",r,c);
+
+    //inital loop
+
+    for (r=1 ;r<6;r++){
+        //nested loop begins
+        for (c =1 ; c<6;c++){
+
+            printf("%3d",r);
         }
-        printf("\n");
+        printf("\n");   //to get the control on next line
     }
 }
+
+// Code by Steavo Babu
