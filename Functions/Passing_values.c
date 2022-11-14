@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int calsum(int h,int k,int l)   //types of variables should be mentioned
+int calsum(int h,int k,int l)   //types of variables should be mentioned  
 {
     int sum;
     sum = h+k+l;    //performing the operation in function
