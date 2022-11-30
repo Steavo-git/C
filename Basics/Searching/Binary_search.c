@@ -18,6 +18,8 @@ int binSearch(int arr[], int st, int end, int key)
     return -1;  // if element not found
 }
  
+/* For binary search array must be strictly sorted otherwise binary search won't give proper output*/
+
 int main()
 {
     int arr[] = {10,20,30,40,50},key;
