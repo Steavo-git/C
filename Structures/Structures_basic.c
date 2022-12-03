@@ -5,7 +5,7 @@ void main()
     //struct structurename
     struct book
     {
-        //structure elemenets of different datatypes
+        //structure elements of different datatypes
         char name[30];int pages; float price;
     };
     //structure variables
