@@ -10,13 +10,13 @@ void main()
         scanf("%d",&arr[i]);
     }
     for(pass=0;pass<n-1;pass++){    //pass  from 0 to n-1
-        min=pass;                   //min is a variable which stores a different index
+        min=pass;                   //min is a variable which stores the index of the minimum value element
         for(j=pass+1;j<n;j++){      //j variable for going through the array starting 1 more than pass
-            if(arr[j]<arr[min]){    //if adjacent element to the right is less than the number then 
-                min=j;               //min gets the value of j
+            if(arr[j]<arr[min]){    //if any element is found less than less than number at index min ,then
+                min=j;               //min gets the index of new smaller value
             }
         }
-        if(min!=pass){               // now if min and pass values are not same then the values at arr[min] and arr[pass]    
+        if(min!=pass){               // now the values at pass and  min are swapped    
             temp=arr[min];          //gets swapped with each other 
             arr[min]=arr[pass];
             arr[pass]=temp;
