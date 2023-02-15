@@ -23,16 +23,36 @@ void transpose(int tda[][4])
 		}
 }
 
+void chk(int tda[][4])
+{
+	int r,c,fl=0;
+	for(r = 0;r<4;r++)
+	{
+		for(c = 0;c<4;c++)
+		{
+			if(tda[r][c]!= tda[c][r])
+				fl=1;
+				break;
+		}
+	}
+	if(fl==1)
+		printf("\nNot symmetric");
+	if(fl==0)
+		printf("\nSymmetric");
+}
 void main()
 
 {
-	int tda[4][4] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+	//int tda[4][4] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+	int tda[4][4] = { 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1};
 	
 	printf("Initial_Array\n");
 	printtda(tda);
+
 	transpose(tda);
 	printf("\nAfter transposing\n");	
 	printtda(tda);
+	chk(tda);
 	
 }
 
