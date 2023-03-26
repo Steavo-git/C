@@ -47,6 +47,14 @@ void pop()
     }
 }
 
+void peek() {   //function to print the 'top' value (the latest element added)
+    if (top == -1) {
+        printf("\n Empty Stack ");
+    } else {
+        printf("\nTop of the Stack : %d", stack[top]);
+    }
+}
+
 int main()
 {
     push();
