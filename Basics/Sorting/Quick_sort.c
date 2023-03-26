@@ -9,7 +9,6 @@ int swap(int *a,int *b){    //for swapping
 int partition(int arr[],int l,int h){      //for creating a partiopn in the array using a pivot element
     int pivot = arr[h];  //we took last elements as the pivot
     int i = l-1;
-    printf("\n%d\n",i);
 
     for(int j= l;j<=h-1;j++)
     {
